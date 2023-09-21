@@ -12,7 +12,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Button jobStoryPanelExit;
     [SerializeField] private Button statusPanelExit;
     [SerializeField] private Button inventoryPanelExit;
-
+    [SerializeField] private Button slot;
+    [SerializeField] private Button equipQCancel;
+    [SerializeField] private Button equipQConfirm;
 
     private void Start()
     {
@@ -44,6 +46,21 @@ public class UIManager : MonoBehaviour
         if(inventoryPanelExit != null)
         {
             inventoryPanelExit.onClick.AddListener(GameManager.instance.InventoryPanelExit);
+        }
+
+        if(slot != null)
+        {
+            slot.onClick.AddListener(GameManager.instance.EquipQ);
+        }
+
+        if(equipQCancel != null)
+        {
+            equipQCancel.onClick.AddListener(GameManager.instance.EquipQCancel);
+        }
+
+        if(equipQConfirm != null)
+        {
+            equipQConfirm.onClick.AddListener(GameManager.instance.EquipQConfirm);
         }
 
     }
