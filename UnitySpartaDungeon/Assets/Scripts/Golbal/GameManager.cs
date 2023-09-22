@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject statusPanel;
     [SerializeField] private GameObject inventoryPanel;
     [SerializeField] private GameObject jobStoryPanel;
+    [SerializeField] private GameObject equipQ;
 
     private void Awake()
     {
@@ -62,5 +63,20 @@ public class GameManager : MonoBehaviour
         inventoryPanel.SetActive(false);
     }
 
-    
+    public void EquipQ()
+    {
+        equipQ.SetActive(true);
+    }
+
+    public void EquipQCancel()
+    {
+        equipQ.SetActive(false);
+    }
+
+    public void EquipQConfirm()
+    {
+        equipQ.SetActive(false);
+        
+    }
+
 }
