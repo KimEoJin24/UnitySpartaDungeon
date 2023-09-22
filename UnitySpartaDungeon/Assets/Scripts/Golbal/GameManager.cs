@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject inventoryPanel;
     [SerializeField] private GameObject jobStoryPanel;
     [SerializeField] private GameObject equipQ;
-    [SerializeField] private GameObject equipment;
 
     private void Awake()
     {
@@ -77,13 +76,7 @@ public class GameManager : MonoBehaviour
     public void EquipQConfirm()
     {
         equipQ.SetActive(false);
-        if (equipment == true)
-        {
-            equipment.SetActive(false);
-        }
-        else
-        {
-            equipment.SetActive(true);
-        }
+        
     }
+
 }
