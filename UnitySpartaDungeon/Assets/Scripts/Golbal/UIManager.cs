@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Button statusPanelExit;
     [SerializeField] private Button inventoryPanelExit;
     [SerializeField] private Button equipQCancel;
+    
 
     private void Start()
     {

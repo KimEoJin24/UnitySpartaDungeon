@@ -3426,6 +3426,10 @@ MonoBehaviour:
   inventoryPanel: {fileID: 597710478}
   jobStoryPanel: {fileID: 1485855208}
   equipQ: {fileID: 746337388}
+  equipments:
+  - {fileID: 446305650}
+  - {fileID: 848087443}
+  - {fileID: 578552484}
 --- !u!4 &1269297230
 Transform:
   m_ObjectHideFlags: 0

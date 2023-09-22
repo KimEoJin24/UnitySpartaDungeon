@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject inventoryPanel;
     [SerializeField] private GameObject jobStoryPanel;
     [SerializeField] private GameObject equipQ;
+    public List<GameObject> equipments = new List<GameObject>();
 
     private void Awake()
     {

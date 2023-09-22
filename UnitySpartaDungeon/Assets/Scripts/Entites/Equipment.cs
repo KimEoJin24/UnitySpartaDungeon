@@ -22,12 +22,12 @@ public class Equipment : MonoBehaviour
     {
         if (isSwitch == true)
         {
-            equipment.SetActive(false);
+            GameManager.instance.equipments[0].SetActive(false);
             isSwitch = false;
         }
         else
         {
-            equipment.SetActive(true);
+            GameManager.instance.equipments[0].SetActive(true);
             isSwitch = true;
         }
     }
